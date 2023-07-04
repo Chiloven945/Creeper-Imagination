@@ -1,1 +1,7 @@
-{ "values": ["loop/essential/btp", "loop/essential/fresh/1"] }
+{
+  "values": [
+    "loop/essential/btp",
+    "loop/essential/fresh/1",
+    "loop/essential/fresh/2"
+  ]
+}

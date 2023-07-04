@@ -4,5 +4,4 @@ execute positioned 5000 69 5000 run tp @a[distance=..5,scores={death_test=1..}] 
 tag @a[scores={death_test=1..}] add fresh
 scoreboard players reset @a[scores={death_test=1..}] death_test
 
-#循环
-schedule function ci:loop/essential/fresh/2 1t append
+#已在tick循环，无需schedule
