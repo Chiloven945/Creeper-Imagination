@@ -15,4 +15,4 @@ execute if entity @e[tag=tool,scores={map=4}] run bossbar set minecraft:map colo
 execute if entity @e[tag=tool,scores={map=4}] run bossbar set minecraft:map name [{"text":"☆地图☆","color":"red","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"→","color":"yellow","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"★城间酷跑★","color":"gold","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
 
 #循环
-schedule function ci:loop/bossbar/style 1t append
+schedule function ci:loop/map/bossbar/style 1t append
