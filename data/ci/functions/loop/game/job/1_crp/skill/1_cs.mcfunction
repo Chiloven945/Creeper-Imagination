@@ -71,8 +71,8 @@ execute as @e[type=creeper,tag=1_skill_1_spawn] run scoreboard players add @s 1_
     execute as @a[tag=trigger_suicide] run tag @a remove trigger_suicide
 
 #非cd锁定
-execute as @a[scores={job=1},tag=!1_skill_cding] unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:creeper_spawn_egg",Count:1b}]}] run clear @s minecraft:creeper_spawn_egg
-    execute as @a[scores={job=1},tag=!1_skill_cding] unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:creeper_spawn_egg",Count:1b}]}] run item replace entity @s hotbar.0 from block -4961 71 -5025 container.0
+execute as @a[scores={job=1},tag=!1_skill_cding] unless entity @s[nbt={Inventory: [{Slot: 0b, id: "minecraft:creeper_spawn_egg", Count: 1b}]}] run clear @s minecraft:creeper_spawn_egg
+    execute as @a[scores={job=1},tag=!1_skill_cding] unless entity @s[nbt={Inventory: [{Slot: 0b, id: "minecraft:creeper_spawn_egg", Count: 1b}]}] run item replace entity @s hotbar.0 from block -4961 71 -5025 container.0
 
 #循环
 schedule function ci:loop/game/job/1_crp/skill/1_cs 1t append
