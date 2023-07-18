@@ -1,0 +1,16 @@
+execute as @s run scoreboard players set @s cd_1 30
+execute as @a run tag @s add 1_skill_cding
+execute as @s if entity @s[scores={1_skill_1_distance=5}] at @s run summon minecraft:creeper ^ ^0.2 ^4.8 {CustomName: '[{"text":"苦力怕","color":"dark_green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]', Tags: ["1_skill_1_spawn"], PersistenceRequired: 1b, Health: 30, Attributes: [{Name: "generic.max_health", Base: 30}], ignited: 1b, ExplosionRadius: 3b, Fuse: 24s}
+execute as @s if entity @s[scores={1_skill_1_distance=4}] at @s run summon minecraft:creeper ^ ^0.2 ^3.9 {CustomName: '[{"text":"苦力怕","color":"dark_green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]', Tags: ["1_skill_1_spawn"], PersistenceRequired: 1b, Health: 30, Attributes: [{Name: "generic.max_health", Base: 30}], ignited: 1b, ExplosionRadius: 3b, Fuse: 24s}
+execute as @s if entity @s[scores={1_skill_1_distance=3}] at @s run summon minecraft:creeper ^ ^0.2 ^2.9 {CustomName: '[{"text":"苦力怕","color":"dark_green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]', Tags: ["1_skill_1_spawn"], PersistenceRequired: 1b, Health: 30, Attributes: [{Name: "generic.max_health", Base: 30}], ignited: 1b, ExplosionRadius: 2b, Fuse: 24s}
+execute as @s if entity @s[scores={1_skill_1_distance=2}] at @s run summon minecraft:creeper ^ ^0.2 ^1.9 {CustomName: '[{"text":"苦力怕","color":"dark_green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]', Tags: ["1_skill_1_spawn"], PersistenceRequired: 1b, Health: 30, Attributes: [{Name: "generic.max_health", Base: 30}], ignited: 1b, ExplosionRadius: 2b, Fuse: 24s}
+execute as @s if entity @s[scores={1_skill_1_distance=1}] at @s run summon minecraft:creeper ^ ^0.2 ^0.9 {CustomName: '[{"text":"苦力怕","color":"dark_green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]', Tags: ["1_skill_1_spawn"], PersistenceRequired: 1b, Health: 30, Attributes: [{Name: "generic.max_health", Base: 30}], ignited: 1b, ExplosionRadius: 2b, Fuse: 24s}
+execute as @s if entity @s[scores={1_skill_1_distance=0}] at @s run summon minecraft:creeper ~ ~0.2 ~ {CustomName: '[{"text":"苦力怕","color":"dark_green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]', Tags: ["1_skill_1_spawn"], PersistenceRequired: 1b, Health: 30, Attributes: [{Name: "generic.max_health", Base: 30}], ignited: 1b, ExplosionRadius: 2b, Fuse: 24s}
+
+execute as @s at @s run playsound minecraft:entity.firework_rocket.blast player @a[distance=..25] ~ ~ ~ 90 1 0.1
+execute at @s as @e[tag=1_skill_1_spawn] unless entity @s[scores={id=1..}] run scoreboard players operation @s id = @p id
+
+execute as @e[tag=1_skill_1_spawn,tag=!1_skill_1_par] at @s run particle minecraft:explosion ~ ~0.2 ~ 0.2 0 0.2 1 1 force @a[distance=..15,tag=!no_particle]
+execute as @e[tag=!1_skill_1_par,tag=1_skill_1_spawn] at @s run tp @s ~ ~0.5 ~
+execute as @e[tag=!1_skill_1_par,tag=1_skill_1_spawn] at @s unless block ~ ~ ~ air run tp @s ~ ~0.3 ~
+tag @e[tag=!1_skill_1_par,tag=1_skill_1_spawn] add 1_skill_1_par

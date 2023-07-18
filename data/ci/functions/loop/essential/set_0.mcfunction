@@ -6,4 +6,4 @@ execute as @a unless entity @s[scores={powder=0..}] run scoreboard players set @
 execute as @a unless entity @s[scores={tnt=0..}] run scoreboard players set @s tnt 0
 
 #循环
-schedule function ci:loop/essential/set_0 1t append
+schedule function ci:loop/essential/set_0 1s append

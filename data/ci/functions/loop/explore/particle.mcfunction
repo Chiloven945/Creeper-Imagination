@@ -21,4 +21,4 @@ execute positioned 20017 60 20014 as @a[distance=..30,tag=!explored_5,tag=!explo
 execute positioned 20017 60 20014 as @a[distance=..30,tag=explored_5] run particle minecraft:crit ~ ~0.3 ~ 0.3 0.3 0.3 0.00001 3 force @s
 
 #循环
-schedule function ci:loop/explore/particle 1t append
+schedule function ci:loop/explore/particle 2t append

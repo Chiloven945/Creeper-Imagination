@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "ci:loop/essential/apple",
-    "ci:loop/essential/btp",
-    "ci:loop/essential/death/respawn"
-  ]
-}

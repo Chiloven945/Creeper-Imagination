@@ -7,4 +7,4 @@ scoreboard players remove @a[scores={cd_11=1..}] cd_11 1
 scoreboard players remove @a[scores={cd_12=1..}] cd_12 1
 
 #循环
-schedule function ci:loop/game/cd/count 1s append
+schedule function ci:loop/game/cd/count 2t append

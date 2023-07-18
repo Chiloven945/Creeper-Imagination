@@ -1,1 +1,4 @@
-{ "values": ["#ci:loop_all"] }
+{
+  "replace": false,
+  "values": ["ci:load"]
+}

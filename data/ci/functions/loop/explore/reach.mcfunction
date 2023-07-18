@@ -41,4 +41,4 @@ execute as @a[tag=explore_5] at @s run tag @s add explored_5
 execute as @a[tag=explore_5] at @s run tag @s remove explore_5
 
 #循环
-schedule function ci:loop/explore/reach 1t append
+schedule function ci:loop/explore/reach 2t append

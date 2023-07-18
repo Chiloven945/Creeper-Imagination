@@ -5,5 +5,8 @@ execute as @a unless entity @s[scores={hunger=20..}] run effect give @s minecraf
 
 effect give @a[team=peace] minecraft:resistance 1 255 true
 
+
+effect give @a[team=peace] minecraft:instant_health 1 3 true
+
 #循环
 schedule function ci:loop/team/peace/join 1t append

@@ -1,9 +1,6 @@
 #触发停止激活
-tag @a[tag=stop_respawn] add btp
-scoreboard players reset @a[tag=stop_respawn] respawn_time
-tag @a[tag=stop_respawn] remove respawning
-attribute @a[tag=stop_respawn,limit=1] minecraft:generic.max_health base set 20
-tag @a[tag=stop_respawn] remove stop_respawn
+function ci:loop/essential/btp
+scoreboard players reset @s respawn_time
+tag @s remove respawning
+attribute @s minecraft:generic.max_health base set 20
 
-#循环
-schedule function ci:loop/essential/death/stop_respawn 1t append

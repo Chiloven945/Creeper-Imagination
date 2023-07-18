@@ -1,7 +1,3 @@
 {
-  "values": [
-    "ci:loop/essential/btp",
-    "ci:loop/essential/fresh/1",
-    "ci:loop/essential/fresh/2"
-  ]
+  "values": []
 }

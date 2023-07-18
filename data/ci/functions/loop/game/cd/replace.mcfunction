@@ -18,4 +18,4 @@ execute as @a[tag=12_skill_cding] unless entity @s[nbt={Inventory: [{Slot: 11b, 
 execute as @a[tag=12_skill_cding] run item replace entity @s inventory.2 with minecraft:pink_stained_glass_pane{display: {Name: '[{"text":"技能冷却中","color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]'}, AttributeModifiers: [{Operation: 0, Amount: -1, UUID: [I; 586650833, 1718784998, -408523868, 922542992], Slot: mainhand, AttributeName: "generic.attack_damage", Name: "generic.attackDamage"}], HideFlags: 63} 1
 
 #循环
-schedule function ci:loop/game/cd/replace 1t append
+schedule function ci:loop/game/cd/replace 2t append
