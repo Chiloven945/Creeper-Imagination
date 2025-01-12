@@ -1,0 +1,45 @@
+{
+    "criteria": {
+        "a": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "player",
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:diamond_axe"
+                                    ],
+                                    "components": {
+                                        "minecraft:item_name": "{\"color\":\"white\",\"italic\":false,\"text\":\"戈仑重斧\"}",
+                                        "minecraft:lore": [
+                                            "{\"color\":\"gray\",\"italic\":false,\"text\":\"✎ 伤害 8 / 攻速 0.8\"}",
+                                            "{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\"左键\"},{\"color\":\"gray\",\"italic\":false,\"text\":\"使用\"}],\"italic\":false,\"text\":\"❃ \"}"
+                                        ],
+                                        "minecraft:attribute_modifiers": {
+                                            "show_in_tooltip": false,
+                                            "modifiers": [
+                                                {"amount": 7.0, "id": "a:a", "type": "minecraft:attack_damage", "operation": "add_value","uuid":[1123,123,123,123],"name":"1"},
+                                                {"amount": -3.2, "id": "a:a", "type": "minecraft:attack_speed", "operation": "add_value","uuid":[1123,123,123,123],"name":"2"}
+                                            ]
+                                        },
+                                        "minecraft:unbreakable": {"show_in_tooltip": false},
+                                        "minecraft:hide_additional_tooltip": {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "entity": {
+                    "type": "player"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "murder:job/5/1/trigger"
+    }
+}

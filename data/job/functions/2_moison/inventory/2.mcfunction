@@ -1,0 +1,7 @@
+clear @s tipped_arrow
+
+#item replace entity @s hotbar.1 with tipped_arrow{HideFlags:255,display:{Name:'[{"text": "万箭齐发","color": "white","italic": false}]',Lore:['[{"text": "✎ 向前方连续发射多根箭矢","color": "gray","italic": false}]','[{"text": "❃ ","color": "gray","italic": false},{"text": "右键","color": "white","italic": false},{"text": "使用 │ 冷却","color": "gray","italic": false},{"text": " 20 ","color": "white","italic": false},{"text": "秒","color": "gray","italic": false}]']},CustomPotionColor:13355979} 1
+
+item replace entity @s hotbar.1 with tipped_arrow[potion_contents={custom_color:13355979},item_name='{"text": "放箭","color": "white","italic": false}',lore=['{"text": "✎ 连续发射多根箭矢","color": "gray","italic": false}','{"text": "✎ 但伤害降低","color": "gray","italic": false}','[{"text": "❃ ","color": "gray","italic": false},{"text": "右键","color": "white","italic": false},{"text": "使用","color": "gray","italic": false}]','[{"text": "❃ ","color": "gray","italic": false},{"text": "20","color": "white","italic": false},{"text": " 秒冷却","color": "gray","italic": false}]'],hide_additional_tooltip={},custom_name='{"text": "放箭","color": "white","italic": false }'] 1
+
+#!!!这里有item_name但是我还使用了custom_name是因为potion_contents的存在，这个本意是为了让箭变色，但是会覆盖item_name的名字，使名字变成诸如“不可合成的药箭”，所以我不得不使用custom_name来再次覆盖，简单地来说，优先级如下：item_name < potion_contents < custom_name !!!#

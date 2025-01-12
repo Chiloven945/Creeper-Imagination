@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_boots"
+        },
+        "title": {"text": "探索点","color": "white"},
+        "description":{"text": "它们被藏在各种地方\n去找到它们吧！","color":"gray"},
+        "frame": "challenge",
+        "show_toast": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+    }
+}

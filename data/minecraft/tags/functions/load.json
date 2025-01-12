@@ -1,4 +1,5 @@
 {
-  "replace": false,
-  "values": ["ci:load"]
+    "values": [
+        "minecraft:initial/load"
+    ]
 }

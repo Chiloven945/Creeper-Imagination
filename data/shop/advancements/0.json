@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "id": "minecraft:emerald"
+        },
+        "title": {
+            "text": "粒子商店", "color": "white"
+        },
+        "description": [
+            {
+                "text": "它们被藏在各种地方\n去找到它们用火药与TNT购买粒子吧！","color": "gray"
+            }
+        ],
+        "frame": "challenge",
+        "show_toast": false,
+        "background": "minecraft:textures/block/deepslate_tiles.png"
+    }
+}

@@ -1,0 +1,22 @@
+clear @s netherite_chestplate
+
+
+#item replace entity @s[scores={team=1}] armor.chest with netherite_chestplate{HideFlags:255,display:{Name:'[{"text": "盔甲","color": "white","italic": false}]',Lore:['[{"text": "✎ 看起来帅气（虽然没有用）","color": "gray","italic": false}]']},AttributeModifiers:[{AttributeName:"minecraft:generic.armor",Amount:0d,Name:"1",Operation:0,Slot:"chest",UUID:[I;1000,1000,1000,1000]}],Unbreakable:1b,Trim:{material:"minecraft:redstone",pattern:"minecraft:dune"}} 1
+
+item replace entity @s[scores={team=1}] armor.chest with netherite_chestplate[item_name='{"text": "重甲","color": "white","italic": false}',lore=['{"text": "✎ 至少真的很重","color": "gray","italic": false}'],hide_additional_tooltip={},unbreakable={show_in_tooltip:false},trim={material:redstone,pattern:"minecraft:dune",show_in_tooltip:false},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:0,name:"1",operation:"add_value",type:"minecraft:armor",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"},{amount:0,name:"2",operation:"add_value",type:"minecraft:knockback_resistance",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"}]},dyed_color={show_in_tooltip:false,rgb:19968}] 1
+
+#item replace entity @s[scores={team=2}] armor.chest with netherite_chestplate{HideFlags:255,display:{Name:'[{"text": "盔甲","color": "white","italic": false}]',Lore:['[{"text": "✎ 看起来帅气（虽然没有用）","color": "gray","italic": false}]']},AttributeModifiers:[{AttributeName:"minecraft:generic.armor",Amount:0d,Name:"1",Operation:0,Slot:"chest",UUID:[I;1000,1000,1000,1000]}],Unbreakable:1b,Trim:{material:"minecraft:lapis",pattern:"minecraft:dune"}} 1
+
+item replace entity @s[scores={team=2}] armor.chest with netherite_chestplate[item_name='{"text": "重甲","color": "white","italic": false}',lore=['{"text": "✎ 至少真的很重","color": "gray","italic": false}'],hide_additional_tooltip={},unbreakable={show_in_tooltip:false},trim={material:lapis,pattern:"minecraft:dune",show_in_tooltip:false},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:0,name:"1",operation:"add_value",type:"minecraft:armor",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"},{amount:0,name:"2",operation:"add_value",type:"minecraft:knockback_resistance",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"}]},dyed_color={show_in_tooltip:false,rgb:19968}] 1
+
+
+
+#item replace entity @s[scores={team=3}] armor.chest with netherite_chestplate{HideFlags:255,display:{Name:'[{"text": "盔甲","color": "white","italic": false}]',Lore:['[{"text": "✎ 看起来帅气（虽然没有用）","color": "gray","italic": false}]']},AttributeModifiers:[{AttributeName:"minecraft:generic.armor",Amount:0d,Name:"1",Operation:0,Slot:"chest",UUID:[I;1000,1000,1000,1000]}],Unbreakable:1b,Trim:{material:"minecraft:gold",pattern:"minecraft:dune"}} 1
+
+item replace entity @s[scores={team=3}] armor.chest with netherite_chestplate[item_name='{"text": "重甲","color": "white","italic": false}',lore=['{"text": "✎ 至少真的很重","color": "gray","italic": false}'],hide_additional_tooltip={},unbreakable={show_in_tooltip:false},trim={material:gold,pattern:"minecraft:dune",show_in_tooltip:false},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:0,name:"1",operation:"add_value",type:"minecraft:armor",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"},{amount:0,name:"2",operation:"add_value",type:"minecraft:knockback_resistance",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"}]},dyed_color={show_in_tooltip:false,rgb:19968}] 1
+
+
+#item replace entity @s[scores={team=4}] armor.chest with netherite_chestplate{HideFlags:255,display:{Name:'[{"text": "盔甲","color": "white","italic": false}]',Lore:['[{"text": "✎ 看起来帅气（虽然没有用）","color": "gray","italic": false}]']},AttributeModifiers:[{AttributeName:"minecraft:generic.armor",Amount:0d,Name:"1",Operation:0,Slot:"chest",UUID:[I;1000,1000,1000,1000]}],Unbreakable:1b,Trim:{material:"minecraft:emerald",pattern:"minecraft:dune"}} 1
+
+
+item replace entity @s[scores={team=4}] armor.chest with netherite_chestplate[item_name='{"text": "重甲","color": "white","italic": false}',lore=['{"text": "✎ 至少真的很重","color": "gray","italic": false}'],hide_additional_tooltip={},unbreakable={show_in_tooltip:false},trim={material:emerald,pattern:"minecraft:dune",show_in_tooltip:false},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:0,name:"1",operation:"add_value",type:"minecraft:armor",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"},{amount:0,name:"2",operation:"add_value",type:"minecraft:knockback_resistance",uuid:[I;1123,123,123,123],slot:"any",id:"a:a"}]},dyed_color={show_in_tooltip:false,rgb:19968}] 1
